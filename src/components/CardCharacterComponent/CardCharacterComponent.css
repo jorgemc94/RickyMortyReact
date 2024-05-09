@@ -1,0 +1,23 @@
+
+.CardComponent__content {
+    display: flex;
+    background-color: rgb(60, 62, 68);
+    color: white;
+}
+
+.CardComponent__content__img {
+    width: 40%;
+}
+
+.CardComponent__content__img__image {
+    width: 100%;
+    height: auto;
+}
+
+.CardComponent__content__text {
+    padding-left: 1.5rem;
+}
+
+.CardComponent__content__text__name {
+    font-size: 1.5rem;
+}

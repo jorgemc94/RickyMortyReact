@@ -1,0 +1,46 @@
+
+.EpisodeDetailsPage__Content {
+    background-color: #000000CC;
+    color: white;
+    right: 0%;
+    margin: auto;
+    width: 25%;
+    padding: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.EpisodeDetailsPage__Content__id {
+    text-align: center;
+    font-style: oblique;
+}
+
+.EpisodeDetailsPage__Content__details {
+    font-size: 1.2rem;
+}
+
+.EpisodeDetailsPage__Content__details__description {
+    font-weight: bolder;
+    display: inline-block;
+    margin: 0%;
+}
+
+.EpisodeDetailsPage__Content__Character__Title {
+    padding: 3rem 0rem;
+}
+
+.EpisodeDetailsPage__Content__Character__Title__text {
+    text-align: center;
+    font-weight: bold;
+    color: #000000CC;
+    font-size: 5rem;
+}
+
+.EpisodeDetailsPage__Content__Character__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    background-color: #000000CC;
+    padding: 5rem 2rem;
+}

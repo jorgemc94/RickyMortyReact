@@ -1,0 +1,8 @@
+
+.ListEpisodeComponent__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    background-color: #000000CC;
+    padding: 5rem 2rem;
+}

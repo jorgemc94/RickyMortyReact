@@ -1,0 +1,31 @@
+
+.CardEpisodeComponent {
+    background-color: rgb(60, 62, 68);
+    color: white;
+}
+
+.CardEpisodeComponent__name {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.CardEpisodeComponent__list__item {
+    list-style: none;
+    padding-left: 1rem;
+    font-style: oblique;
+    font-size: 1.2rem;
+}
+
+.CardEpisodeComponent__text {
+    display: inline-block;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.CardEpisodeComponent__button {
+    color: rgb(60, 62, 68);
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+}

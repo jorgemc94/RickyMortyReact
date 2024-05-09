@@ -1,0 +1,21 @@
+
+.NavbarComponent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.NavbarComponent__content__list {
+    list-style: none;
+}
+
+.NavbarComponent__content__list__item {
+    font-size: 1.3rem;
+    color: #000000CC;
+    font-weight: bold;
+    font-style: oblique;
+    text-decoration: none;
+    margin-left: 1.5rem;
+}

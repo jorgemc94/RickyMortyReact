@@ -1,0 +1,37 @@
+
+.FormCharacterComponent__form {
+    width: 20%;
+    background-color: #000000CC;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    right: 0%;
+    margin: auto;
+    padding: 3rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.FormCharacterComponent__form__label {
+    padding-bottom: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.FormCharacterComponent__form__input {
+    background-color: #000000CC;
+    color: white;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    font-style: oblique;
+}
+
+.FormCharacterComponent__form__button {
+    width: 25%;
+    font-style: oblique;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    right: 0%;
+    margin: auto;
+}
+
