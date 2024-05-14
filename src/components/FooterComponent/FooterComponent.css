@@ -1,16 +1,16 @@
 
 .FooterComponent {
     align-items: center;
-    padding: 1.5rem 3rem;
+    padding: 3rem 0rem;
     box-shadow: 5px 0px 10px 10px  rgba(0, 0, 0, 0.75);
     margin-top: 3.5rem;
 }
 
 .FooterComponent__text {
     color: #000000CC;
-    font-size: 1.3rem;
     text-align: center;
     font-style: oblique;
     font-weight: bolder;
     opacity: 0.5;
+    font-size: 1.2rem;
 }

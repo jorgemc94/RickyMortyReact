@@ -1,13 +1,17 @@
 
+import { useDispatch } from 'react-redux';
 import './FormCharacterComponent.css'
+import { addCharacter } from '../../features/tasks/taskSlice';
 
 export const FormCharacterComponent = () => {
 
+    const dispatch = useDispatch()
 
     const submitHandler = (event) => {
         event.preventDefault();
-        console.log(event.target.elements.name.value);
-        console.log(event.target.elements.specie.value);
+        const name = event.target.elements.name.value;
+        const specie = event.target.elements.specie.value;
+        dispatch(addCharacter({name, specie}))
     }
 
 
