@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { GetCharacterThunk } from "./taskThunk";
+import { GetCharacterThunk } from "./CharacterThunk";
 
 
 export const CharacterSlice = createSlice({

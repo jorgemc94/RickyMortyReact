@@ -1,7 +1,7 @@
 
 import { useDispatch } from 'react-redux';
 import './FormCharacterComponent.css'
-import { addCharacter } from '../../features/tasks/taskSlice';
+import { addCharacter } from '../../features/CharacterSlice/CharacterSlice';
 
 export const FormCharacterComponent = () => {
 
@@ -9,9 +9,10 @@ export const FormCharacterComponent = () => {
 
     const submitHandler = (event) => {
         event.preventDefault();
+        const image = 'https://rickandmortyapi.com/api/character/avatar/19.jpeg'
         const name = event.target.elements.name.value;
-        const specie = event.target.elements.specie.value;
-        dispatch(addCharacter({name, specie}))
+        const species = event.target.elements.specie.value;
+        dispatch(addCharacter({name, species, image}))
     }
 
 
