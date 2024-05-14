@@ -3,11 +3,13 @@ import './FormCharacterComponent.css'
 
 export const FormCharacterComponent = () => {
 
+
     const submitHandler = (event) => {
         event.preventDefault();
         console.log(event.target.elements.name.value);
         console.log(event.target.elements.specie.value);
     }
+
 
     return(
         <>

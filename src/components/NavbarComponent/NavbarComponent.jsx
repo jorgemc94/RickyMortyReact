@@ -1,5 +1,5 @@
 
-import { NavLink, Outlet } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './NavbarComponent.css'
 import logo from '../../assets/logo.png'
 
@@ -19,7 +19,6 @@ export const NavbarComponent = () => {
                     </ul>
                 </div>
             </nav>
-            <Outlet />
         </>
     )
 }
