@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import './ListCharacterComponent.css'
 import { CardCharacterComponent } from '../CardCharacterComponent/CardCharacterComponent'
 import { useDispatch, useSelector } from 'react-redux'
-import { GetCharacterThunk } from '../../features/CharacterSlice/CharacterThunk'
+import { GetCharacterThunk } from '../../features/Characters/CharacterThunk'
 
 export const ListCharacterComponent = () => {
     

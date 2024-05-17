@@ -7,15 +7,15 @@ import { StructureComponent } from './components/StructureComponent/StructureCom
 import { EpisodeDetailsPage } from './pages/EpisodeDetailsPages/EpisodeDetailsPage.jsx';
 import { FormCharacterPage } from './pages/FormCharacterPage.jsx';
 import { Provider } from 'react-redux';
-import { store } from './app/store.js';
+import { Store } from './app/store.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Provider store={store} >
+    <Provider store={Store} >
       <BrowserRouter>
         <Routes>
           <Route element={<StructureComponent />}>
-            <Route path='' element={<IndexPages/>} />
+            <Route path='/' element={<IndexPages/>} />
             <Route path='/episodes' element={<EpisodesPages/>} />
             <Route path='/episode/:id' element={<EpisodeDetailsPage/>}/>
             <Route path='/newcharacter' element={<FormCharacterPage/>} />

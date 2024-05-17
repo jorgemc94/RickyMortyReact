@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import './ListEpisodeComponent.css'
 import { CardEpisodeComponent } from '../CardEpisodeComponent/CardEpisodeComponent'
 import { useDispatch, useSelector } from 'react-redux'
-import { GetEpisodeThunk } from '../../features/EpisodeSlice/EpisodeThunk'
+import { GetEpisodeThunk } from '../../features/Episodes/EpisodeThunk'
 
 export const ListEpisodeComponent = () => {
 
@@ -27,6 +27,7 @@ export const ListEpisodeComponent = () => {
             alert ('Error')
         }
     }, [EpisodesStatus,dispatch,Episodes])
+
     return(
         <>
             {loading ? <p>Loading...</p> : 

@@ -26,12 +26,11 @@
 }
 
 .FormCharacterComponent__form__button {
-    width: 25%;
     font-style: oblique;
     font-weight: bold;
-    padding: 1rem 1rem;
+    padding: 1rem 3rem;
     border-radius: 0.5rem;
     right: 0%;
     margin: auto;
+    cursor: pointer;
 }
-

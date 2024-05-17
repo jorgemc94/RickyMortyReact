@@ -16,11 +16,13 @@
     font-style: oblique;
 }
 
-.EpisodeDetailsPage__Content__details {
+.EpisodeDetailsPage__Content__Details__List {
     font-size: 1.2rem;
+    list-style: none;
+    padding-bottom: 1rem;
 }
 
-.EpisodeDetailsPage__Content__details__description {
+.EpisodeDetailsPage__Content__Details__List__description {
     font-weight: bolder;
     display: inline-block;
     margin: 0%;

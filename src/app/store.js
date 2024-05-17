@@ -1,11 +1,13 @@
 
 import { configureStore } from '@reduxjs/toolkit';
-import { CharacterSlice } from '../features/CharacterSlice/CharacterSlice'
-import { EpisodeSlice } from '../features/EpisodeSlice/EpisodeSlice';
+import { CharacterSlice } from '../features/Characters/CharacterSlice'
+import { EpisodeSlice } from '../features/Episodes/EpisodeSlice';
+import { CharactersPerEpisodeSlice } from '../features/CharacterPerEpisode/CharactersPerEpisodeSlice';
 
-export const store = configureStore({
+export const Store = configureStore({
     reducer: {
         character: CharacterSlice.reducer,
-        episode: EpisodeSlice.reducer
+        episode: EpisodeSlice.reducer,
+        charactersPerEpisode: CharactersPerEpisodeSlice.reducer
     }
 })

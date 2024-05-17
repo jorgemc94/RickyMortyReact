@@ -32,4 +32,4 @@ export const CharacterSlice = createSlice({
 })
 
 
-export const { addCharacter } = CharacterSlice.actions
+export const { addCharacter, removeCharacter } = CharacterSlice.actions
