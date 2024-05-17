@@ -2,7 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 
 
 
-export const GetCharactersPerEpisodeThunk = createAsyncThunk('episode/getEpisode', async (id) => {
+export const GetCharactersPerEpisodeThunk = createAsyncThunk('charactersPerEpisode/getCharactersPerEpisode', async (id) => {
     try {
         const requestEpisode = await fetch(`https://rickandmortyapi.com/api/episode/${id}`)
         if (requestEpisode.ok) {

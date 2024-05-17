@@ -12,6 +12,10 @@ export const CharactersPerEpisodeSlice = createSlice({
     reducers: {
         addCharactersPerEpisode: (state, action) => {
             state.data.push(action.payload)
+        },
+
+        changes: (state,action) => {
+            state.status = 'idle'
         }
     },
 
@@ -23,7 +27,7 @@ export const CharactersPerEpisodeSlice = createSlice({
         
         .addCase(GetCharactersPerEpisodeThunk.fulfilled, (state, action) => {
             state.status = 'fulfilled'
-            state.data = (action.payload)
+            state.data = action.payload
         })
 
         .addCase(GetCharactersPerEpisodeThunk.rejected, (state, action) => {
@@ -35,4 +39,4 @@ export const CharactersPerEpisodeSlice = createSlice({
 })
 
 
-export const { addCharactersPerEpisode } = CharactersPerEpisodeSlice.actions
+export const { addCharactersPerEpisode,  changes} = CharactersPerEpisodeSlice.actions

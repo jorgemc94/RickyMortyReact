@@ -7,11 +7,11 @@ import { StructureComponent } from './components/StructureComponent/StructureCom
 import { EpisodeDetailsPage } from './pages/EpisodeDetailsPages/EpisodeDetailsPage.jsx';
 import { FormCharacterPage } from './pages/FormCharacterPage.jsx';
 import { Provider } from 'react-redux';
-import { Store } from './app/store.js';
+import { store } from './app/store.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Provider store={Store} >
+    <Provider store={store} >
       <BrowserRouter>
         <Routes>
           <Route element={<StructureComponent />}>

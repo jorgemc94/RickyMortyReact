@@ -4,7 +4,7 @@ import './EpisodeDetailsPage.css'
 import { CardCharacterComponent } from "../../components/CardCharacterComponent/CardCharacterComponent"
 import { useDispatch, useSelector } from "react-redux"
 import { GetCharactersPerEpisodeThunk } from "../../features/CharacterPerEpisode/CharactersPerEpisodeThunk"
-
+import { changes } from "../../features/CharacterPerEpisode/CharactersPerEpisodeSlice"
 
 export const EpisodeDetailsPage = () => {
    
@@ -29,6 +29,10 @@ export const EpisodeDetailsPage = () => {
             setLoading (true)
         } 
     }, [dispatch, CharactersStatus, Characters, Episode])
+
+    useEffect(() => {
+        dispatch(changes())
+    }, [])
 
     return loading ? (
         <p>Loading</p>
